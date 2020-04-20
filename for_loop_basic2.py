@@ -1,4 +1,4 @@
-#1
+#1 Some of these proved to be challenging and I had to reffer to the solution to work some of them out.
 def big_size(list):
     for num in range(len(list)):
         if list[num] > 0: 

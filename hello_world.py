@@ -1,14 +1,12 @@
-#9
-def reverse_list(lst):
-    half_len = int(len(lst) / 2)
-    for i in range(half_len):
-        lst[i] , lst[len(lst) - 1 - i] = lst[len(lst) - 1 - i], lst[i]
-    return lst
+dojo = {
+   'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
+   'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
+}
+def printInfo(some_dict):
+    for key in some_dict.keys():
+      print(f"{len(some_dict[key])} {key.upper()}")
+    for item in some_dict[key]:
+     print(item)
+    print('\n')
 
-print(reverse_list([37, 2, 1, -9]))
-print(reverse_list([37, 2, 1, -9, 5]))
-print(reverse_list([]))
-print(reverse_list([1]))
-print(reverse_list([1, 2]))
-
-    
+printInfo(dojo)
